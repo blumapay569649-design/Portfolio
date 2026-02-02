@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Bryan's Website!</h1>
+        <h2>Please fill the information below to register to our community.</h2>
+
+        <form action="index.html" method="post" autocomplete="on" target="_self">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required maxlength="50">
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required maxlength="50">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate">Date of Birth</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">-- Select a Country --</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="india">Philippines</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                
+                <div class="form-group">
+                    <label>Sex</label>
+                    <div class="radio-group">
+                        <div class="radio-item">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Interests</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sports" name="interests" value="sports" checked>
+                            <label for="sports">Sports</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="music" name="interests" value="music">
+                            <label for="music">Music</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="reading" name="interests" value="reading">
+                            <label for="reading">Reading</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="technology" name="interests" value="technology" checked>
+                            <label for="technology">Technology</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="colorPref">Favorite Color</label>
+                    <input type="color" id="colorPref" name="colorPref" value="#3498db">
+                </div>
+
+                <div class="form-group">
+                    <label for="brightness">Brightness Level</label>
+                    <input type="range" id="brightness" name="brightness" min="0" max="100" value="50">
+                    <div class="range-value">Current value: <span id="brightnessValue">50</span>%</div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+                
+                <div class="form-group">
+                    <label for="feedback">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" placeholder="Please share your thoughts and feedback..."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>File Upload</legend>
+                
+                <div class="form-group">
+                    <label for="profilePicture">Upload Profile Picture</label>
+                    <input type="file" id="profilePicture" name="profilePicture">
+                </div>
+            </fieldset>
+            <div class="button-group">
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Clear Form">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
