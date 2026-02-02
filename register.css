@@ -10,11 +10,11 @@
             padding: 40px 20px;
             min-height: 100vh;
             background-image: url('imgfiles/bg_img.png');
-                background-size: fill;
+                background-size: 250%;
                 background-repeat: no-repeat;
                 border-radius: 50%;
 }
-        }
+        
 
         .container {
             max-width: 700px;
@@ -297,3 +297,4 @@
     }
 
 }
+
