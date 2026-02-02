@@ -9,6 +9,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 40px 20px;
             min-height: 100vh;
+            background-image: url('imgfiles/bg_img.png');
+                background-size: fill;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+}
         }
 
         .container {
@@ -290,4 +295,5 @@
     .button-group {
         flex-direction: column;
     }
+
 }
