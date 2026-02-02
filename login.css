@@ -52,4 +52,12 @@
 }
 .login-form .register-link a:hover {
     text-decoration: underline;
+
+}
+
+#body {
+    background-image: url('imgfiles/bg_img.png');
+    background-size: fill;
+    background-repeat: no-repeat;
+    border-radius: 50%;
 }
