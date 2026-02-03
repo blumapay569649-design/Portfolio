@@ -1,3 +1,4 @@
+/*  Register Submit Button  */
 const form = document.getElementById('landingForm');
 
   form.addEventListener('submit', function(event) {
